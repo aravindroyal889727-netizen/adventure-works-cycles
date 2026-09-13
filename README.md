@@ -1,43 +1,75 @@
-# adventure-works-cycles
-End-to-end sales analysis project using MySQL, Excel, Power BI, and Tableau — solving the same business requirements across all four tools.
-# Adventure Works Cycles – End-to-End Sales Analysis
+# Adventure Works Cycles | End-to-End Sales Analytics
 
-A 3-week, 4-module project solving the same business requirement set — laid out in `Questionnaire.xlsx` — using MySQL, Excel, Power BI, and Tableau.
+> A multi-tool business intelligence project solving the same sales requirements across Excel, MySQL, Tableau, and Power BI.
 
-## Timeline
+## Project Overview
 
-| Week | Module | Folder |
+This project demonstrates an end-to-end analytics workflow using the Adventure Works dataset. The analysis combines sales, product, customer, date, and territory information to answer business questions and build decision-ready dashboards.
+
+## Business Questions
+
+- How are sales and profit changing over time?
+- Which products, customers, regions, and countries drive performance?
+- What are the top-performing customers and products?
+- How do sales compare across year, month, quarter, and financial periods?
+- What insights can be presented consistently across different analytics tools?
+
+## Project Roadmap
+
+| Module | Focus | Folder |
 |---|---|---|
-| Week 1 | Excel | `01-excel/` |
-| Week 2 | SQL (MySQL) + Tableau | `02-sql-tableau/` |
-| Week 3 | Power BI | `03-powerbi/` |
+| 01 | Excel analysis, formulas, pivots and charts | `01-excel/` |
+| 02 | MySQL analysis and Tableau reporting | `02-sql-tableau/` |
+| 03 | Power BI data modeling, DAX and dashboarding | `03-powerbi/` |
 
-## What this project covers
-- Data merging and lookups across sales, product, customer, and territory tables
-- Date-dimension fields: Year, Month, Quarter, Financial Month/Quarter, Weekday
-- Calculated Sales Amount, Production Cost, and Profit fields
-- Pivot tables, bar/line/pie/combination charts, and KPI dashboards
-- Performance breakdowns by Product, Customer, and Region
+## Analytics Workflow
 
-## Folder contents
+```text
+Raw Sales Data
+      ↓
+Data Preparation & Merging
+      ↓
+SQL Analysis / Excel Validation
+      ↓
+Calculated Sales, Cost & Profit
+      ↓
+Power BI + Tableau Visualization
+      ↓
+Business Insights
+```
 
-**`01-excel/`**
-- `Adventure_Works_Cycles.xlsx` — full workbook with pivot tables, formulas, and charts
+## Key Analysis
 
-**`02-sql-tableau/`**
-- `00_analysis_build_script.sql` — **start here.** The full documented build, question by question (Q0–Q13): combining sales tables, joining product/customer/date dimensions, calculating Sales Amount, Production Cost, Profit, and Profit Margin, then year/month/quarter/region/country/top-5 breakdowns and the final dashboard view.
-- `dim_customer.sql`, `dim_date.sql`, `dim_product.sql`, `dim_product_subcategory.sql`, `dim_sales_territory.sql` — source dimension tables
-- `fact_internet_sales.sql`, `fact_internet_sales_new.sql`, `sales_combined.sql`, `sales_product.sql`, `sales_date.sql`, `final_table.sql`, `final_dashboard.sql` — intermediate and final tables produced by the build script
-- `routines.sql` — stored routines/procedures used in the analysis
-- Tableau workbook not included here — add your `.twbx` file to this folder if you have one.
+- Data merging and lookup logic across dimensions
+- Date dimension with year, month, quarter, weekday and financial-period fields
+- Sales Amount, Production Cost, Profit and Profit Margin calculations
+- Product, customer, regional and country performance
+- Top-customer and top-product analysis
+- KPI dashboards and interactive visualizations
 
-**`03-powerbi/`**
-- `Adventure_Works_Cycles.pbix` — Power BI dashboard file
+## Technology Stack
 
-**`Questionnaire.xlsx`** — the business requirement questions this project answers, common across all four modules
+`Microsoft Excel` `MySQL` `Power BI` `Tableau` `DAX` `SQL` `Data Modeling` `Business Intelligence`
 
-## Tools used
-`MySQL` `Microsoft Excel` `Power BI` `Tableau`
+## Repository Structure
+
+```text
+adventure-works-cycles/
+├── 01-excel/
+├── 02-sql-tableau/
+├── 03-powerbi/
+├── Questionnaire.xlsx
+└── README.md
+```
+
+## Portfolio Value
+
+This project demonstrates the ability to take one business problem through multiple analytics environments while maintaining consistent calculations, business logic, and storytelling.
 
 ## Author
-Ayya Aravind — [LinkedIn](https://linkedin.com/in/aravind-ayya-3133a039a) · [GitHub](https://github.com/aravindroyal889727-netizen)
+
+**Ayya Aravind**  
+Data Analyst | Power BI | SQL | Excel | Python | Generative AI
+
+- GitHub: https://github.com/aravindroyal889727-netizen
+- LinkedIn: https://www.linkedin.com/in/aravind-ayya-3133a039
